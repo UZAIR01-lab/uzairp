@@ -1,10 +1,10 @@
-// Smooth scrolling effect
-document.querySelectorAll('a').forEach(anchor => {
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href'))
-            .scrollIntoView({
-                behavior: 'smooth'
-            });
+        const section = document.querySelector(this.getAttribute('href'));
+        section.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+console.log("Portfolio Loaded Successfully");
