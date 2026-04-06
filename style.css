@@ -1,22 +1,25 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
     line-height: 1.6;
-    color: #333;
+    color: #2d3436;
     scroll-behavior: smooth;
+    background-color: #f9f9f9;
 }
 
+[span_5](start_span)/* Professional Navigation[span_5](end_span) */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
-    background: #2c3e50;
+    padding: 1rem 10%;
+    background: #2d3436;
     color: white;
     position: sticky;
     top: 0;
@@ -31,47 +34,69 @@ nav ul {
 nav ul li a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
-}
-
-section {
-    padding: 80px 10% 20px;
-    min-height: 80vh;
-}
-
-.hero {
-    text-align: center;
-    background: #f4f4f4;
-}
-
-.profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 5px solid #fff;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
+    margin-left: 2rem;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-.card:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+nav ul li a:hover {
+    color: #00cec9;
 }
 
-.card img {
+/* Sections */
+section {
+    padding: 100px 10%;
+    min-height: 100vh;
+}
+
+/* Home / Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+[span_6](start_span)/* Grids for Projects & Certificates[span_6](end_span) */
+.project-grid, .certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card, .cert-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.screenshot-group img {
     width: 100%;
+    margin-bottom: 10px;
     border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #0984e3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
