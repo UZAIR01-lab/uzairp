@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Digital Portfolio</title>
+    <title>Student Digital Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
-        <div class="logo">Portfolio</div>
+        <div class="logo">MyPortfolio</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -18,41 +19,47 @@
     </nav>
 
     <section id="home" class="hero">
-        <img src="assets/my-photo.jpg" alt="Profile Photo" class="profile-img">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p>Aspiring Developer | Student</p>
+        <div class="hero-content">
+            <img src="assets/my-photo.jpg" alt="Your Name" class="profile-img">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Welcome to my academic and professional showcase.</p>
+        </div>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <div class="content">
-            <p>I am a student passionate about technology. My goal is to [Your Goal].</p>
+        <div class="content-box">
+            <p>[Insert your write-up here. Describe your background and your goal in life.]</p>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="grid">
+        <h2>My Projects</h2>
+        <div class="project-grid">
             <div class="card">
-                <img src="assets/project-ss.jpg" alt="Project Screenshot">
-                <h3>Project Title</h3>
-                <p>Brief description of what you built.</p>
+                <h3>Project Title 1</h3>
+                <div class="screenshot-group">
+                    <img src="assets/project1-desktop.png" alt="Desktop View">
+                    <img src="assets/project1-mobile.png" alt="Mobile View">
+                </div>
+                <p>A brief description of the technologies used and the project objective.</p>
             </div>
         </div>
     </section>
 
     <section id="achievements">
         <h2>Achievements & Certificates</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="assets/cert-thumb.jpg" alt="Certificate">
-                <p>Certification Name</p>
+        <div class="certificate-grid">
+            <div class="cert-card">
+                <img src="assets/certificate1.jpg" alt="Certificate 1">
+                <p>Certificate Name / Achievement Title</p>
+                <a href="assets/certificate1.pdf" target="_blank" class="btn">View PDF</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 | Created for AI4A Evaluation</p>
+        <p>© 2026 Student Portfolio | AI4A Evaluation 3</p>
     </footer>
 
     <script src="script.js"></script>
